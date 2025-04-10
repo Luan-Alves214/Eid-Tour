@@ -1,0 +1,351 @@
+.corfundo {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #D1EFFA;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid #000000;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoimg {
+    width: 70px;
+    height: 70px;
+}
+.linkhome {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    gap: 100px;
+    font-size: 18px;
+}
+ul{
+    font-weight: normal;
+}
+
+.menu-pesquisa {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    align-items: center;
+}
+
+.menu-pesquisa input {
+    background-color: white;
+}
+
+
+.barra-pesquisa {
+    border: 2px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: #F8F1F1;
+    width: 400px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* From Uiverse.io by StefanR1901 */
+.colorful-form {
+    max-width: 450px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.form-input:hover {
+    border: 2px solid #064F69;
+}
+
+
+textarea.form-input {
+    height: 50px;
+}
+
+
+.form-button {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #252727;
+}
+
+.colorful-form h1 {
+    color: #064F69;
+    font-weight: bold;
+    margin: 5px 0 20px;
+}
+
+.contato{
+    height: 450px;
+}
+
+.redes-localizacao{
+    height: 450px;
+}
+.form-button {
+    margin: 7px;
+}
+
+.contato-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+}
+
+.redes-localizacao {
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    width: 700px;
+    padding: 20px 50px 20px 50px;
+}
+
+.redes-localizacao h2 {
+    color: #064F69;
+    font-weight: bold;
+    margin: 5px 0 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.localizacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loc-text {
+    width: 260px;
+    text-align: justify;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F1F1;
+}
+
+.redes-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.logoFooter img {
+    height: 70px;
+
+}
+
+.redes-sociais-footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.redes-sociais-footer li {
+    list-style-type: none;
+}
+
+footer h2 {
+    margin: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #565656;
+}
+
+.linha-footer {
+    width: 800px;
+    background-color: #BFBBBB;
+    height: 2px;
+
+}
+
+.cntt-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+    margin: 20px;
+}
+
+.cntt-footer button {
+    background-color: white;
+    padding: 5px;
+    border: 2px solid #064F69;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+
+
+@media (max-width: 1210px) {
+    header {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Centraliza os itens em telas menores */
+        list-style: none;
+        gap: 30px; /* Ajuste o espaço entre os itens conforme necessário */
+        font-size: 18px;
+        margin: 0; /* Remove margens da lista */
+        padding: 0; /* Remove preenchimento da lista */
+    }
+    .contato-redes{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        height: 120vh;
+    }
+    .redes-localizacao{
+        height: 60vh;
+    }
+
+    .redes-sociais {
+        flex-direction: column;
+        text-align: justify ;
+        gap: 20px;
+    }
+
+    .localizacao{
+        flex-direction: column;
+    }
+    .redes-localizacao{
+        width: 90%;
+    }
+
+
+
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Centraliza os itens em telas menores */
+        list-style: none;
+        gap: 30px; /* Ajuste o espaço entre os itens conforme necessário */
+        font-size: 18px;
+        margin: 0; /* Remove margens da lista */
+        padding: 0; /* Remove preenchimento da lista */
+    }
+    .contato-redes{
+
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .redes-sociais {
+        flex-direction: column;
+        text-align: justify ;
+        gap: 20px;
+    }
+
+    .localizacao{
+        flex-direction: column;
+    }
+    .redes-localizacao{
+        width: 90%;
+    }
+
+
+
+    .linha-footer {
+        width: 90%;
+    }
+
+    .barra-pesquisa {
+        width: 90%;
+    }
+
+
+    .fraseFinal h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+}
